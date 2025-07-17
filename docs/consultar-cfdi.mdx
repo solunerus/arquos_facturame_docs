@@ -2,27 +2,58 @@
 sidebar_position: 4
 ---
 
+import {SeleccionOrganismo} from "@site/src/components/Items";
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
 # Consultar CFDI
+
+<ImageDiv
+        src="/img/arquos_facturame/consultar/consultar.png"
+        alt="Consultar CFDI"
+      />
+
+## Selección de organismo
+
+<SeleccionOrganismo />
 
 ## Búsqueda de folio
 
 Para consultar el estado de un CFDI, debes ingresar el folio de solicitud o el folio de algún ticket que hayas facturado anteriormente. Este folio es el de vital ayuda para identificar el estado de tu CFDI en el sistema.
 
-**Imagen**
+<ImageDiv
+        src="/img/arquos_facturame/consultar/input-folio.png"
+        alt="Consultar CFDI"
+      />
 
 A un costado del campo de texto, encontrarás un botón de ayuda que te mostrará una imagen de ejemplo de dónde encontrar el folio en tus tickets o en el correo electrónico que recibiste al solicitar el CFDI.
 
-**Imagen**
+<ImageDiv
+        src="/img/arquos_facturame/consultar/input-folio-help.png"
+        alt="Consultar CFDI"
+      />
 
 ## Resultados de la consulta
 
 Una vez que hayas ingresado el folio, presiona el botón de "Consultar" para obtener los resultados. El sistema te mostrará el estado del CFDI.
 
+<ImageDiv
+        src="/img/arquos_facturame/consultar/result.png"
+        alt="Resultados de la consulta"
+      />
+
+En caso de haber error, el sistema te mostrará un mensaje con el motivo del error.
+
+<ImageDiv
+        src="/img/arquos_facturame/consultar/consulta-error.png"
+        alt="Error en la consulta"
+      />
+
 ### Estados posibles
 
 - **Generado**: El CFDI ha sido generado exitosamente y está disponible para descarga.
-**Imagen**
+{/* **Imagen** */}
 - **En proceso**: El CFDI está siendo procesado y aún no está disponible.
-**Imagen**
+{/* **Imagen** */}
 - **Rechazado**: El CFDI no pudo ser generado debido a algún error o falta de información.
-**Imagen**
+{/* **Imagen** */}

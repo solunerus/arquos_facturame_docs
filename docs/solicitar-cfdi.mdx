@@ -2,12 +2,38 @@
 sidebar_position: 3
 ---
 
+import {SeleccionOrganismo, InputRFC, DatosFiscales, DatosContactos, InputFolios} from "@site/src/components/Items";
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
 # Solicitar CFDI
+
+## Selección de organismo
+
+<SeleccionOrganismo />
+
+## Agregar RFC
+
+<InputRFC />
+
+## Datos fiscales
+
+<DatosFiscales />
+
+## Datos de contacto
+
+<DatosContactos />
 
 ## Captura de folios
 
---
+<InputFolios />
+
 Una vez que hayas ingresado todos los folios que deseas facturar, presiona el botón de "Enviar" para continuar con el proceso de solicitud del CFDI.
+
+<ImageDiv
+        src="/img/arquos_facturame/solicitud/enviar.png"
+        alt="Botón enviar"
+      />
 
 ## Resultados del proceso
 
@@ -15,6 +41,16 @@ Una vez que hayas ingresado todos los folios que deseas facturar, presiona el bo
 
 Una vez que el CFDI ha sido solicitado, recibirás un correo electrónico con el folio de tu solicitud. Asegúrate de revisar tu bandeja de entrada y tu carpeta de spam.
 
+<ImageDiv
+        src="/img/arquos_facturame/solicitud/email.png"
+        alt="Email de confirmación"
+      />
+
 ### Página de revisión
 
 En la página de revisión, podrás ver un resumen de los datos de tu solicitud, incluyendo el folio de la solicitud y algunos de los datos fiscales que ingresaste.
+
+<ImageDiv
+        src="/img/arquos_facturame/solicitud/resultado-1.png"
+        alt="Página de resultado de solicitud"
+      />
